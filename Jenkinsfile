@@ -10,14 +10,14 @@ pipeline{
         }
         stage('Build Image'){
             steps{
-                bat "docker build -t=djearamalu/selenium ."
+                bat "docker build -t=djearamalu/seldoc ."
             }
 
         }
 
         stage('Push Image'){
             steps{
-                bat "docker push djearamalu/selenium"
+                bat "docker push djearamalu/seldoc"
             }
         }
     }
